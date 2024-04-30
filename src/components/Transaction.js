@@ -11,7 +11,9 @@ function Transaction() {
     .catch((error)=>console.error(error))
     
   },[])
-  
+
+
+
     return (
       <>
         {Transact.map((data, id) => (

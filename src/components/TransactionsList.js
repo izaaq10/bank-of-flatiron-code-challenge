@@ -1,7 +1,7 @@
 import React from "react";
 import Transaction from "./Transaction";
 
-function TransactionsList() {
+function TransactionsList({search}) {
   return (
     <table className="ui celled striped padded table">
       <tbody>
@@ -19,7 +19,7 @@ function TransactionsList() {
             <h3 className="ui center aligned header">Amount</h3>
           </th>
         </tr>
-        <Transaction/>
+        <Transaction search={search}/>
       </tbody>
     </table>
   );
